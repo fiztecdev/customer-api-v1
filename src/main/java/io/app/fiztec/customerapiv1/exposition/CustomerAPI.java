@@ -17,16 +17,23 @@ public class CustomerAPI {
         CustomerDto customerDto = new CustomerDto();
         DocumentDto documentDto = new DocumentDto();
         DirectionDto directionDto = new DirectionDto();
+
         directionDto.setDirectionName("Enrique Barrón 1137");
         directionDto.setDirectionType("Calle");
         directionDto.setDirectionNumber("1137");
+        directionDto.setCity("Lima");
+        directionDto.setCountry("Perú");
+
         documentDto.setDocumentType("00");
         documentDto.setDocumentNumber("77276172");
+
         customerDto.setName("Fidel");
         customerDto.setFatherSurname("Villanueva");
         customerDto.setMotherSurname("Delgado");
+        customerDto.setDateBirth("27/10/2008");
         customerDto.setDocumentDto(documentDto);
         customerDto.setDirectionDto(directionDto);
+
         return customerDto;
     }
 }

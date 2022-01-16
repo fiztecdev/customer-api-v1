@@ -11,4 +11,6 @@ public class DirectionDto {
     private String directionName;
     private String directionNumber;
     private String directionType;
+    private String country;
+    private String city;
 }

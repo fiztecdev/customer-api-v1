@@ -14,6 +14,7 @@ public class CustomerDto {
     private String name;
     private String fatherSurname;
     private String motherSurname;
+    private String dateBirth;
     @JsonProperty("document")
     private DocumentDto documentDto;
     private String email;
