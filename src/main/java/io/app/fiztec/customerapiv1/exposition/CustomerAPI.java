@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/customer")
 public class CustomerAPI {
 
-    @GetMapping("/")
+    @GetMapping("")
     public CustomerDto getCustomers(){
         CustomerDto customerDto = new CustomerDto();
         DocumentDto documentDto = new DocumentDto();
