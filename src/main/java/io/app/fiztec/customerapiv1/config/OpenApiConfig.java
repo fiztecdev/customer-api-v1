@@ -14,13 +14,13 @@ public class OpenApiConfig {
     public OpenAPI openApi() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Title")
+                        .title("Customer")
                         .description("Customer API")
                         .version("v1.0.0")
                         .contact(new Contact()
-                                .name("Arun")
-                                .url("https://asbnotebook.com")
-                                .email("asbnotebook@gmail.com"))
+                                .name("Fidel Villanueva")
+                                .url("https://api.fvillanueva.com.pe")
+                                .email("fvillanueva.pe@gmail.com"))
                         .termsOfService("TOC")
                         .license(new License().name("License").url("#"))
                 );
