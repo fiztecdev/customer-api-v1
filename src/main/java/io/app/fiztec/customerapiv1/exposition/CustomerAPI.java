@@ -3,6 +3,7 @@ package io.app.fiztec.customerapiv1.exposition;
 import io.app.fiztec.customerapiv1.dto.CustomerDto;
 import io.app.fiztec.customerapiv1.dto.DirectionDto;
 import io.app.fiztec.customerapiv1.dto.DocumentDto;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CustomerAPI {
 
     @GetMapping("")
+    @Tag(name = "Customer",description = "Customer API")
     public CustomerDto getCustomers(){
         CustomerDto customerDto = new CustomerDto();
         DocumentDto documentDto = new DocumentDto();
